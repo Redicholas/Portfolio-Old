@@ -1,0 +1,310 @@
+$border-radius: 16px;
+$glass: rgba(17, 20, 22, 0.6);
+$transition: all 0.1s ease-in-out;
+
+* {
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+    line-height: 20px;
+}
+
+body {
+    background: #000000;
+    font-family: 'urbanist', sans-serif;
+    background-image: url(/img/macbook.jpg);
+    background-size: cover;
+    background-position: 90% 50%;
+    background-attachment: fixed;
+    nav {
+        height: 6rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        color: #fff;
+        font-weight: 100;
+        ul {
+            display: none;
+            transition: $transition;
+            li {
+                a {
+                    transition: $transition;
+                }
+                a:hover {
+                    text-shadow: 0 0 5px #ffbe26;
+                }
+            }
+        }
+        img {
+            height: 65px;
+            width: 80px;
+        }
+        button {
+            cursor: pointer;
+            height: 40px;
+            width: 55px;
+            border: none;
+            margin: 0;
+            background: none;
+                span {
+                    transition: $transition;
+                    background: #fff;
+                    height: 5px;
+                    width: 100%;
+                    margin-bottom: 8px;
+                    border-radius: 4px;
+                    display: block;
+                }
+                span:nth-child(2) {
+                    position: relative;
+                    left: -10px;
+                    transition: $transition;
+                }
+            }
+            button:hover {
+                transition: $transition;
+                span {
+                    background: #ffbe26;
+                    box-shadow: 0 0 5px #ffbe26;
+                }
+                span:nth-child(2) {
+                    left: 0;
+                }
+            }
+    }
+    .menu {
+        position: fixed;
+        right: 0;
+        display: none;
+        height: 70vh;
+        width: 70vw;
+        z-index: 5;
+        background: $glass;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.2px);
+        -webkit-backdrop-filter: blur(9.2px);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 2rem;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            padding-inline-start: 0;
+            li {
+                a {
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    color:rgb(255, 255, 255);  
+                    transition: $transition;
+                }
+                a:hover,
+                a:focus {
+                    color: #ffbe26;
+                    text-shadow: 0 0 5px #ffbe26; 
+                }
+            }
+        }
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 6rem);
+        color:rgb(255, 255, 255);
+        h1 {
+            line-height: 60px;
+            font-size: 3rem;
+            font-weight: bold;
+            font-weight: 100;
+            text-shadow: 4px 3px 2px #000; 
+            color:rgb(255, 255, 255);  
+            transition: $transition;     
+        }
+        h1:hover {
+            color: #ffbe26;
+            text-shadow: 0 0 5px #ffbe26; 
+        }
+        a{
+            button {
+                // margin-top: 5rem;
+                position: absolute;
+                bottom: 10vh;
+                background: #ffbe26c4;
+                border-radius: 16px;
+                box-shadow: 2px 4px 10px rgb(0, 0, 0);
+                backdrop-filter: blur(9.2px);
+                -webkit-backdrop-filter: blur(9.2px);
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                color: rgb(0, 0, 0);
+                border-radius: 50px;
+                padding: 0.8rem 1.6rem;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: $transition;
+            }
+            button:hover {
+                background: #ffbe26;
+                box-shadow: 0 0 5px #ffbe26;
+            }
+        }
+        .center {
+            padding: 3rem;
+        }
+    }
+// ---------------------------Page Two--------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+    .about {
+        color: #fff;
+        font-weight: 100;
+        background: $glass;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.2px);
+        -webkit-backdrop-filter: blur(9.2px);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 3rem auto;
+        height: 100%;
+        max-width: 700px;
+        padding: 3rem;
+        p {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 1rem;
+            text-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .about-image-hat {
+            display: block;
+            margin: 0 auto;
+            border-radius: $border-radius;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 2px 2px 1px #000;
+        }
+        h3 {
+            text-align: center;
+        }
+        a {
+            img {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: 0 auto;
+                border-radius: $border-radius;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                transition: $transition;
+            }
+            img:hover {
+                box-shadow: 0 0 10px #ffbe26;
+            }
+        }
+    }
+// ---------------------------Page Three------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+    .portfolio {
+        text-align: center;
+        padding: 3rem;
+        margin: 3rem auto;
+        max-width: 700px;
+        margin-top: 10rem;
+        color: #fff;
+        background: $glass;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.2px);
+        -webkit-backdrop-filter: blur(9.2px);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        h2 {
+            text-shadow: 3px 3px 10px black;
+        }
+        .portfolio-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-weight: 100;
+            padding: 2rem;
+            img {
+                border-radius: $border-radius;
+                // border: 1px solid #fff; 
+                transition: $transition;
+            }
+            img:hover {
+                box-shadow: 0 0 10px #ffbe26;
+            }
+            div {
+                max-width: 300px;
+            }
+            p {
+                text-shadow: 2px 2px 1px black;
+            }
+        }
+    }
+        
+// ---------------------------Page Four------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+    .contact {
+        margin: 3rem auto;
+        max-width: 700px;
+        margin-top: 10rem;
+        background: $glass;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.2px);
+        -webkit-backdrop-filter: blur(9.2px);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        h2 {
+            margin-top: 0;
+            padding-top: 2rem;
+            color: #fff;
+        }
+        text-align: center;
+        i {
+            font-size: 3rem;
+        }
+        .contact-box {
+            max-width: 250px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                color:#fff;
+            }
+            i {
+                color: #fff;
+            }
+            a {
+                color: #fff;
+                margin-bottom: 2rem;
+                i {
+                    color: #fff;
+                }
+            }
+            a:nth-child(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

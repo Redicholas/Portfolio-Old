@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {
+    body {
+        nav {
+            button {
+                display: none;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+                font-size: 1.5rem;
+                li {
+                    padding-left: 3rem;
+                    a{
+                        color: #fff;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                    }
+                    a:hover {
+                        color: #ffbe26;
+                    }
+                }
+            }
+            img {
+                height: 80px;
+                width: 95px;
+            }
+        }
+        .home {
+            h1 {
+                font-size: 4rem;
+            }
+            a {
+                right: 20%;
+                button {
+                    font-size: 2rem;
+                }
+            }
+        }
+// ---------------------------Page Two--------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+        .about {
+            .about-top {
+                min-height: 40vh;
+                background-position-y: 60%;
+            }
+            .about-bottom {
+                .about-text {
+                    flex-direction: row;
+                    padding: 3rem;
+                }
+            }
+        }
+// ---------------------------Page Three--------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+        .portfolio {
+            .portfolio-items {
+                margin: 0 auto;
+                img {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

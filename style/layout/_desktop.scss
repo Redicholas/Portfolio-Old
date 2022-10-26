@@ -1,0 +1,70 @@
+@media only screen and (min-width: 1366px) {
+    body {
+        nav {
+            height: 10rem;
+            ul {
+                list-style-type: none;
+                display: flex;
+                font-size: 2.2rem;
+                li {
+                    padding-left: 4rem;
+                    a{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            img {
+                height: 120px;
+                width: 140px;
+            }
+        }
+        .home {
+            .center {
+                display: flex;
+                align-items: center;
+                h1 {
+                    font-size: 5rem;
+                }
+                a {
+                    button {
+                        left: 0;
+                        margin-left: 5rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+// ---------------------------Page Two--------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+        .about {
+            .about-text {
+                height: 50vh;
+                background-position-y: 80%;
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+// ---------------------------Page Three------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+            .portfolio {
+                .grid {
+                    display: grid; 
+                    grid-template-columns: 1fr 1fr; 
+                    grid-template-rows: 1fr 1fr; 
+                    gap: 10px 10px;
+                    grid-template-areas: 
+                    "top-left top-right"
+                    "bottom-left bottom-right";
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid rgba(0, 0, 0, 0.5);
+                        border-radius: $border-radius;
+                    }
+                }
+            }
+        }
+    }
+}

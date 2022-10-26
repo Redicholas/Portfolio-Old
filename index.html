@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d79386da4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Nicholas Peters Portfolio</title>
+</head>
+<body>
+    <nav id="nav">
+        <p>Nicholas Peters</p>
+        <button onclick="toggleMenu()" title="menu button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+    <section class="home">
+        <div class="center">
+            <h1>Nicholas:<br>&nbsp;&nbsp;Front End<br>&nbsp;&nbsp;Developer</h1>
+            <a href="#contact"><button>Talk to me</button></a>
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <h2>A little about me.</h2>
+        <img class="about-image-hat" src="img/nicholas-peters.jpg" height="150" width="150" alt="nicholas peters with a hat on a boat">
+        <div class="about-text">
+            <p>My name is Nicholas Peters. <br>
+            I am on the journey to become a Front End Developer. <br>
+            During the winter of 2021-2022 I tried my hand at a few different online
+            tutorials and started to really enjoy the process of creating websites from scratch. <br><br>
+            I decided to make a big shift in my life and applied to a few different schools in Sweden that had
+            Front End Development courses. <br>
+            So here I am, not even a year later and I´m studying full time at Medieinstitutet. <br>
+            Learning everything I can and will be starting an apprenticeship in the middle of 2023.
+        </p>
+        </div>
+        <h3>My CV</h3>
+        <a href="img/CV Nicholas Peters.pdf" target="_blank" title="a pdf of nicholas peters cv"><img src="img/cv-img.png" height="100" width="100" alt="a pdf of nicholas peters cv"></a>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2>This is some of my work so far.</h2>
+        <div class="portfolio-items">
+            <div>
+                <a href="https://github.com/Redicholas/space-ventures" target="_blank"><img src="img/portfolio-item-1.png" height="100" width="100" alt=""></a>
+                <p>This is my first project for Medieinstitutet</p>
+            </div>
+            <div>
+                <a href="https://github.com/Redicholas/ColorPicker" target="_blank"><img src="img/portfolio-item-2.png" height="100" width="100"></a>
+                <p>Made after doing my own studies prior to Medieinstitutet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Talk to me.</h2>
+        <div class="contact-box">
+            <a href="mailto:peters.nicholas@gmail.com" target="_blank"><i class="fa-solid fa-envelope" title="email link"></i></a><a href="mailto:peters.nicholas@gmail.com" target="_blank">peters.nicholas@gmail.com</a>
+            <a href="https://github.com/Redicholas" target="_blank" title="github link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nicholas-peters-1b0b42176/" title="linkedin link"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-solid fa-location-dot"></i><p>Gothenburg, Sweden</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
