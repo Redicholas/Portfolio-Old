@@ -39,30 +39,9 @@
 // -------------------------------------------------------------------------
         .about {
             .about-text {
-                height: 50vh;
                 background-position-y: 80%;
                 p {
                     font-size: 1.2rem;
-                }
-            }
-// ---------------------------Page Three------------------------------------
-// -------------------------------------------------------------------------
-// -------------------------------------------------------------------------
-            .portfolio {
-                .grid {
-                    display: grid; 
-                    grid-template-columns: 1fr 1fr; 
-                    grid-template-rows: 1fr 1fr; 
-                    gap: 10px 10px;
-                    grid-template-areas: 
-                    "top-left top-right"
-                    "bottom-left bottom-right";
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        border: 1px solid rgba(0, 0, 0, 0.5);
-                        border-radius: $border-radius;
-                    }
                 }
             }
         }

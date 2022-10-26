@@ -1,5 +1,4 @@
 function toggleMenu(){
-    console.log("yum")
     const menu = document.getElementById("menu");
 
     if (menu.style.display == "block") {
