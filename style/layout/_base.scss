@@ -35,6 +35,8 @@ body {
             transition: $transition;
             li {
                 a {
+                    border-bottom: 1px solid #ffbe26;
+                    text-decoration: none;
                     transition: $transition;
                 }
                 a:hover {
@@ -130,33 +132,29 @@ body {
             color:rgb(255, 255, 255);  
             transition: $transition;     
         }
-        h1:hover {
-            color: #ffbe26;
-            text-shadow: 0 0 5px #ffbe26; 
-        }
-        a{
-            button {
-                // margin-top: 5rem;
-                position: absolute;
-                bottom: 10vh;
-                background: #ffbe26c4;
-                border-radius: 16px;
-                box-shadow: 2px 4px 10px rgb(0, 0, 0);
-                backdrop-filter: blur(9.2px);
-                -webkit-backdrop-filter: blur(9.2px);
-                border: 1px solid rgba(0, 0, 0, 0.5);
+        button {
+            position: absolute;
+            bottom: 10vh;
+            background: #ffbe26c4;
+            border-radius: 16px;
+            box-shadow: 2px 4px 10px rgb(0, 0, 0);
+            backdrop-filter: blur(9.2px);
+            -webkit-backdrop-filter: blur(9.2px);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            padding: 0.8rem 1.6rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: $transition;
+            a {
                 color: rgb(0, 0, 0);
-                border-radius: 50px;
-                padding: 0.8rem 1.6rem;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: $transition;
+                text-decoration: none;
             }
-            button:hover {
-                background: #ffbe26;
-                box-shadow: 0 0 5px #ffbe26;
-            }
+        }
+        button:hover {
+            background: #ffbe26;
+            box-shadow: 0 0 5px #ffbe26;
         }
         .center {
             padding: 3rem;
@@ -182,7 +180,7 @@ body {
             margin: 0 auto;
             max-width: 500px;
             padding: 1rem;
-            text-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
         }
         h2 {
             margin-top: 0;
@@ -230,7 +228,7 @@ body {
         margin-top: 10rem;
         color: #fff;
         background: $glass;
-        border-radius: 16px;
+        border-radius: $border-radius;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(9.2px);
         -webkit-backdrop-filter: blur(9.2px);
@@ -243,24 +241,17 @@ body {
             flex-direction: row;
             justify-content: space-around;
             font-weight: 100;
-            padding: 2rem;
             img {
+                height: 130px;
+                width: 130px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
                 border-radius: $border-radius;
-                // border: 1px solid #fff; 
-                transition: $transition;
             }
             img:hover {
                 box-shadow: 0 0 10px #ffbe26;
             }
-            div {
-                max-width: 300px;
-            }
-            p {
-                text-shadow: 2px 2px 1px black;
-            }
         }
     }
-        
 // ---------------------------Page Four------------------------------------
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
@@ -292,8 +283,14 @@ body {
             p {
                 color:#fff;
             }
+            p:hover {
+                color: #ffbe26;
+            }
             i {
                 color: #fff;
+            }
+            i:hover {
+                color: #ffbe26;
             }
             a {
                 color: #fff;
@@ -301,6 +298,9 @@ body {
                 i {
                     color: #fff;
                 }
+            }
+            a:hover {
+                color: #ffbe26;
             }
             a:nth-child(1) {
                 margin-bottom: 0;
