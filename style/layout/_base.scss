@@ -238,12 +238,12 @@ body {
         }
         .portfolio-items {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-around;
             font-weight: 100;
             img {
-                height: 130px;
-                width: 130px;
+                height: 170px;
+                width: 170px;
                 border: 1px solid rgba(0, 0, 0, 0.5);
                 border-radius: $border-radius;
             }
