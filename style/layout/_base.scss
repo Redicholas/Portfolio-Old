@@ -18,7 +18,7 @@ body {
     font-family: 'urbanist', sans-serif;
     background-image: url(../img/macbook.jpg);
     background-size: cover;
-    background-position: 90% 50%;
+    background-position: 50%;
     background-attachment: fixed;
     nav {
         height: 6rem;
@@ -129,8 +129,8 @@ body {
             font-weight: bold;
             font-weight: 100;
             text-shadow: 4px 3px 2px #000; 
-            color:rgb(255, 255, 255);  
-            transition: $transition;     
+            color:rgb(255, 255, 255);
+            transition: $transition;  
         }
         button {
             position: absolute;
