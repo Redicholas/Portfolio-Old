@@ -136,8 +136,7 @@ nav {
         font-weight: 100;
         text-shadow: 4px 3px 2px $black; 
         color: $white;
-        transition: $transition;  
-    }
+        animation: myAnim 1s ease 0s 1 normal forwards;    }
     a {
         position: absolute;
         bottom: 10vh;
@@ -265,7 +264,7 @@ nav {
     max-width: 700px;
     margin-top: 10rem;
     background: $glass;
-    border-radius: 16px;
+    border-radius: $border-radius;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.2px);
     -webkit-backdrop-filter: blur(9.2px);
@@ -311,4 +310,16 @@ nav {
             margin-bottom: 0;
         }
     }
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
