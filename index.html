@@ -1,92 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the portfolio website of Front End Developer Student, Nicholas Peters">
-    <meta name="keywords" content="Front end developer, portfolio, HTML, CSS, JavaScript">
-    <meta name="author" content="Nicholas Peters">
-    <meta property="og:title" content="Nicholas Peters: Front End Developer">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="img/thumbnail.png">
-    <script src="https://kit.fontawesome.com/2d79386da4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the portfolio website of Front End Developer Student, Nicholas Peters"
+    />
+    <meta
+      name="keywords"
+      content="Front end developer, portfolio, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Nicholas Peters" />
+    <meta property="og:title" content="Nicholas Peters: Front End Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/thumbnail.png" />
+    <script
+      src="https://kit.fontawesome.com/2d79386da4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
     <title>Nicholas Peters Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="nav">
-        <p>Nicholas Peters</p>
-        <button onclick="toggleMenu()" title="menu button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <p>Nicholas Peters</p>
+      <button onclick="toggleMenu()" title="menu button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
     <div class="menu" id="menu">
-        <ul>
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
     </div>
     <section class="home">
-        <div class="center">
-            <h1>Nicholas:<br>&nbsp;&nbsp;Front End<br>&nbsp;&nbsp;Developer</h1>
-            <a href="#contact">Talk to me</a>
-        </div>
+      <div class="center">
+        <h1>Nicholas:<br />&nbsp;&nbsp;Front End<br />&nbsp;&nbsp;Developer</h1>
+        <a href="#contact">Talk to me</a>
+      </div>
     </section>
     <section class="about" id="about">
-        <h2>A little about me.</h2>
-        <img class="about-image-hat" src="img/nicholas-peters.jpg" loading="lazy" height="150" width="150" alt="nicholas peters with a hat on a boat">
-        <div class="about-text">
-            <p>My name is Nicholas Peters. <br>
-            I am on the journey to become a Front End Developer. <br>
-            Currently I am studying at Medieinstitutet in Sweden and in the autumn of 2023 I will be starting my first apprenticeship period.
-            <br>
-            <br>
-            I would love to find a medium sized web agency that work mostly with React. But I am learning more 
-            about what I like everyday so I am open to any suggestions!
-            If you have any recommendations I would appreciate them very much. <br>
-            Get in touch!
+      <h2>A little about me.</h2>
+      <img
+        class="about-image-hat"
+        src="img/nicholas-peters.jpg"
+        loading="lazy"
+        height="150"
+        width="150"
+        alt="nicholas peters with a hat on a boat"
+      />
+      <div class="about-text">
+        <p>
+          My name is Nicholas Peters. <br />
+          I am on the journey to become a Front End Developer. <br />
+          Currently I am studying at Medieinstitutet in Sweden and in the autumn
+          of 2023 I will be starting my first apprenticeship period.
+          <br />
+          <br />
+          I would love to find a medium sized web agency that work mostly with
+          React. But I am learning more about what I like everyday so I am open
+          to any suggestions! If you have any recommendations I would appreciate
+          them very much. <br />
+          Get in touch!
         </p>
-        </div>
-        <h3>My CV</h3>
-        <a href="img/CV-Nicholas-Peters.pdf" target="_blank" title="a pdf of nicholas peters cv"><img src="img/cv-img.png" loading="lazy" height="100" width="100" alt="a pdf of nicholas peters cv"></a>
+      </div>
+      <h3>My CV</h3>
+      <a
+        href="img/CV-Nicholas-Peters.pdf"
+        target="_blank"
+        title="a pdf of nicholas peters cv"
+        ><img
+          src="img/cv-img.png"
+          loading="lazy"
+          height="100"
+          width="100"
+          alt="a pdf of nicholas peters cv"
+      /></a>
     </section>
     <section class="portfolio" id="portfolio">
-        <h2>This is some of my work so far.</h2>
-        <div class="portfolio-items">
-            <div>
-                <a href="https://github.com/Redicholas/space-ventures" loading="lazy" title="space-ventures-github-repo" target="_blank"><img src="img/portfolio-item-1.png" height="100" width="100" alt="screenshot of my space-ventures website"></a>
-                        <p>This is my first project for Medieinstitutet</p>
-                    </div>
-            <div>
-                <a href="https://github.com/Redicholas/ColorPicker" loading="lazy" title="colorpicker-github-repo" target="_blank"><img src="img/portfolio-item-2.png" height="100" width="100" alt="screenshot of my colorpicker"></a>
-                    <p>Made after doing my own studies prior to Medieinstitutet.</p>
-                </div>
-            </div>
+      <h2>This is some of my work so far.</h2>
+      <div class="portfolio-items">
+        <div>
+          <a
+            href="https://github.com/Redicholas/space-ventures"
+            loading="lazy"
+            title="space-ventures-github-repo"
+            target="_blank"
+            ><img
+              src="img/portfolio-item-1.png"
+              height="100"
+              width="100"
+              alt="screenshot of my space-ventures website"
+          /></a>
+          <p>This is my first project for Medieinstitutet</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/Redicholas/ColorPicker"
+            loading="lazy"
+            title="colorpicker-github-repo"
+            target="_blank"
+            ><img
+              src="img/portfolio-item-2.png"
+              height="100"
+              width="100"
+              alt="screenshot of my colorpicker"
+          /></a>
+          <p>Made after doing my own studies prior to Medieinstitutet.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/Redicholas/Metric-Imperial-Converter"
+            loading="lazy"
+            title="metric-imperial-converter-repo"
+            target="_blank"
+            ><img
+              src="img/Unit-Converter.png"
+              height="100"
+              width="100"
+              alt="screenshot of my unit converter"
+          /></a>
+          <p>Small project while studying JavaScript</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/Redicholas/Password-Generator"
+            loading="lazy"
+            title="password-generator-github-repo"
+            target="_blank"
+            ><img
+              src="img/Password-Generator.png"
+              height="100"
+              width="100"
+              alt="screenshot of my password-generator"
+          /></a>
+          <p>Another little JavaScript project</p>
+        </div>
+      </div>
     </section>
     <section class="contact" id="contact">
-        <h2>Talk to me.</h2>
-        <div class="contact-box">
-            <a href="mailto:peters.nicholas@gmail.com" target="_blank"><i class="fa-solid fa-envelope" title="email link"></i></a><a href="mailto:peters.nicholas@gmail.com" target="_blank">peters.nicholas@gmail.com</a>
-            <a href="https://github.com/Redicholas" target="_blank" title="github link"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/nicholas-peters-1b0b42176/" title="linkedin link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://goo.gl/maps/ejcEqp13YJfBaLH86" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-            <a href="https://goo.gl/maps/ejcEqp13YJfBaLH86" target="_blank">Gothenburg, Sweden</a>
-        </div> 
+      <h2>Talk to me.</h2>
+      <div class="contact-box">
+        <a href="mailto:peters.nicholas@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope" title="email link"></i></a
+        ><a href="mailto:peters.nicholas@gmail.com" target="_blank"
+          >peters.nicholas@gmail.com</a
+        >
+        <a
+          href="https://github.com/Redicholas"
+          target="_blank"
+          title="github link"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nicholas-peters-1b0b42176/"
+          title="linkedin link"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://goo.gl/maps/ejcEqp13YJfBaLH86" target="_blank"
+          ><i class="fa-solid fa-location-dot"></i
+        ></a>
+        <a href="https://goo.gl/maps/ejcEqp13YJfBaLH86" target="_blank"
+          >Gothenburg, Sweden</a
+        >
+      </div>
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
